@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>huh?</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .pay-page {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .pay-page .buttons-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin-top: 0;
+      }
+
+      .pay-page .buttons-container .button {
+        position: static;
+        margin: 0;
+        width: 400px;
+        box-sizing: border-box;
+      }
+
+      .pay-page .buttons-container #yes-button {
+        position: static;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="image-container pay-page">
+        <div class="message-container">
+          <div class="message">Я плачу́?</div>
+        </div>
+
+        <img src="gifs/question-2.gif" width="600" />
+
+        <div class="buttons-container">
+          <button
+            class="button"
+            id="yes-button"
+            onclick="location.href = 'happy-page.html'"
+          >
+            Конечно!
+          </button>
+
+          <button
+            class="button"
+            id="no-button2"
+            onclick="location.href = 'be-my-girlfriend.html'"
+          >
+            Нет, я же не твоя девушка.
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
